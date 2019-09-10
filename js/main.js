@@ -44,6 +44,7 @@ $(document).ready(() => {
     });
 
     $('#generate_code').click((e) => {
+        code.embed.fields = [];
         code.content = $('#content').val();
         code.embed.title = $('#title').val();
         code.embed.description = $('#description').val();
