@@ -79,3 +79,13 @@ input {
     color: white;
     margin-bottom: 10px;
 }
+
+#cpy_to_clipboard {
+    border: none;
+    width: 20vw;
+    height: 40px;
+    padding: 12px 20px;
+    background-color: grey;
+    color: whitesmoke;
+    border-radius: 10px;
+}
