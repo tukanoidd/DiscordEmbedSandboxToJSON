@@ -11,21 +11,21 @@ $(document).ready(() => {
         content: '',
         embed: {
             title: '',
+            description: '',
+            url: '',
+            color: '',
+            footer: {
+                text: ''
+            },
+            thumbnail: {
+                url: ''
+            },
             author: {
                 name: '',
                 url: '',
                 icon_url: ''
             },
-            description: '',
-            url: '',
-            thumbnail: {
-                url: ''
-            },
-            color: '',
-            fields: [],
-            footer: {
-                text: ''
-            }
+            fields: []
         }
     };
 
