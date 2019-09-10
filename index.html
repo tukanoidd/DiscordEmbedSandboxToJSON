@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Discord Embed Generator JSON</title>
+
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    
+    <body>
+        <div class="card">
+            <h1>Embed Editor</h1>
+
+            <form>
+                <div class="basic-settings">
+                    Basic Settings
+                    <input id="content" class="input_text" placeholder="content" type="text">
+                    <input id="title" class="input_text" placeholder="title" type="text">
+                    <input id="description" class="input_text" placeholder="description" type="text">
+                    <input id="url" class="input_text" placeholder="url" type="text">
+                </div>
+
+                <div class="color">
+                    Color
+                    <input id="color" type="color">
+                </div>
+
+                <div class="thumbnail-settings">
+                    Thumbnail Settings
+                    <input id="icon" class="input_text" placeholder="content" type="text">
+                </div>
+
+                <div class="author-settings">
+                    Author Settings
+                    <input id="author_name" class="input_text" placeholder="author name" type="text">
+                    <input id="author_link" class="input_text" placeholder="author link" type="text">
+                    <input id="author_icon" class="input_text" placeholder="author icon" type="text">
+                </div>
+
+                <div id="fields">
+                    Fields
+                    <div class="field">
+                        <input class="field_name input_text" placeholder="name" type="text">
+                        <input class="field_value input_text" placeholder="value" type="text">
+                        <input class="field_inline" type="checkbox"> <label>Inline</label>
+                        <input class="field_delete" type="button" value="Remove Field">
+                    </div>
+
+                    <input id="field_add" value="Add Field" type="button">
+                </div>
+
+                <div class="footer-settings">
+                    Footer Settings
+                    <input id="footer_text" class="input_text" placeholder="footer text" type="text">
+                </div>
+
+                <input id="generate_code" value="Generate JSON" type="button">
+            </form>
+        </div>
+
+
+        <div class="card">
+            <h1>JSON</h1>
+            <pre><code class="json_code"></code></pre>
+        </div>
+    </body>
+</html>

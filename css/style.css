@@ -1,0 +1,81 @@
+body {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.card {
+    border: 1px lightgrey solid;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    background-color: rgb(247, 247, 249);
+    border-color: rgba(0, 0, 0, 0.125);
+    border-radius: 3px 3px 0 0;
+    margin: 0;
+    padding: 12px 20px;
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+form div, form div * {
+    margin-bottom: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    display: inline;
+}
+
+.field * {
+    margin-right: 10px;
+}
+
+input {
+    outline: none;
+}
+
+#field_add, .field_delete {
+    border: none;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.field_delete {
+    background-color: #d9534f;
+}
+
+#field_add {
+    width: 20vw;
+    font-size: 18px;
+    background-color: #5cb85c;;
+}
+
+.input_text {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+#generate_code {
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    margin-bottom: 10px;
+}
