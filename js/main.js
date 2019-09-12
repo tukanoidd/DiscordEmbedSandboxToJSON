@@ -64,11 +64,11 @@ $(document).ready(() => {
             });
         });
 
-        $('.json_code').text(JSON.stringify(code, null, 4));
+        $('.json_code').text(JSON.stringify(code));
     });
 
     $('#cpy_to_clipboard').click((e) => {
-        copyStringToClipboard(JSON.stringify(JSON.parse($('.json_code').text())));
+        copyStringToClipboard($('.json_code').text());
     });
 });
 
