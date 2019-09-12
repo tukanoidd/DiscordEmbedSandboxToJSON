@@ -68,7 +68,7 @@ $(document).ready(() => {
     });
 
     $('#cpy_to_clipboard').click((e) => {
-        copyStringToClipboard($('.json_code').text().replace(/\s/g, ''));
+        copyStringToClipboard(JSON.stringify(JSON.parse($('.json_code').text())));
     });
 });
 
