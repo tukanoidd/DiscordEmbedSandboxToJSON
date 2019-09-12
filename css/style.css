@@ -89,3 +89,7 @@ input {
     color: whitesmoke;
     border-radius: 10px;
 }
+
+pre {
+    overflow: scroll;
+}
